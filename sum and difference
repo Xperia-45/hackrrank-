@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+int a,b,sum,dif;
+float c, d, sum1,dif1;
+scanf("%d %d", &a, &b) ;
+scanf("%f%f", &c, &d) ;
+sum=a+b;
+dif=a-b;
+sum1=c+d;
+dif1=c-d;
+printf("%d %d\n",sum,dif);
+printf("%0.1f %0.1f\n",sum1,dif1);
+}
