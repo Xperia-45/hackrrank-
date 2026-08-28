@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main(){
+char ch;
+char str [30];
+char sen [100];
+scanf("%c" , &ch );
+scanf("%s" , &str );
+scanf(" %[^\n]" , sen );
+printf("%cn" , ch);
+printf("%s\n", str);
+printf ("%sn" , sen);
