@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <math.h>
+
+int countDigits(long long n) {
+    if (n == 0) return 1;
+    int count = 0;
+    while (n > 0) {
+        count++;
+        n /= 10;
+    }
+    return count;
+}
+
+
+int isArmstrong(long long n) {
+    long long original = n;
+    int digits = countDigits(n);
+    long long sum = 0;
+
+    long long temp = n;
+    while (temp > 0) {
+        int remainder = temp % 10;
+        sum += round(pow(remainder, digits));
+        temp /= 10;
+    }
+
+    return (sum == original);
+}
+
+int main() {
+    long long n;
+    if (scanf("%lld", &n) == 1) {
+        if (isArmstrong(n)) {
+            printf("Armstrong Number\n");
+        } else {
+            printf("Not an Armstrong Number\n");
+        }
+    }
+    return 0;
+}
