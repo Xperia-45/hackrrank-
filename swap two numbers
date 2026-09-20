@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+void swap(long long *a, long long *b) {
+    long long temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+int main() {
+    long long a, b;
+    if (scanf("%lld %lld", &a, &b) == 2) {
+        swap(&a, &b);
+        printf("%lld %lld\n", a, b);
+    }
+    return 0;
+}
