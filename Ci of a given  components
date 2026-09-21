@@ -7,12 +7,11 @@ int main() {
     double P, R, t;
     int n;
 
-    if (scanf("%lf %lf %lf %d", &P, &R, &t, &n) != 4) return 0;
+    if (scanf("%lf %lf %lf %d", &P, &R, &t, &n) != 4) 
+    return 0;
     double r = R / 100.0;
     double A = P * pow(1.0 + (r / (double)n), n * t);
     double CI = A - P;
-
     printf("%.2f %.2f\n", A, CI);
-
     return 0;
 }
