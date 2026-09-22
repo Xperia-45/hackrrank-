@@ -8,7 +8,7 @@ void swap(long long *a, long long *b) {
 
 int main() {
     long long a, b;
-    if (scanf("%lld %lld", &a, &b) == 2) {
+    if (scanf("%d %d", &a, &b) == 2) {
         swap(&a, &b);
         printf("%lld %lld\n", a, b);
     }
