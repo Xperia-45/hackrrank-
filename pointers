@@ -15,3 +15,29 @@ update(&a ,&b);
 printf("%d\n%d",a,b);
 return 0;
 }
+#THIS IS ANOTHER PROGRAM USING POINTER
+#include <stdio.h>
+
+int main() {
+    int n;
+    if (scanf("%d", &n) == 1) {
+        int arr[n];
+        
+        for (int i = 0; i < n; i++) {
+            scanf("%d", &arr[i]);
+        }
+        
+
+        int *ptr = arr;
+  
+        for (int i = 0; i < n; i++) {
+            if (i == 0) {
+                printf("%d", *(ptr + i));
+            } else {
+                printf(" %d", *(ptr + i));
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}
