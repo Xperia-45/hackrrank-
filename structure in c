@@ -5,3 +5,11 @@ char Student_Name[50];
 int C_Marks;
 int Database_Marks;
 };
+int main()
+{ 
+ int i;
+struct Student Students[4]=
+{
+{"x" ,80, 70, 89 ,79,  90},
+{"y" , 75 ,70,89,82},
+}
