@@ -12,3 +12,4 @@ union Student Students[4]=
 {"x" ,80, 70, 89 ,79,  90},
 {"y" , 75 ,70,89,82},
 }
+//dif between union and structure is that union share memory
