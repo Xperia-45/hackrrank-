@@ -1,0 +1,14 @@
+#include <stdio.h>
+void updateValue(int *ptr) {
+    *ptr = 100; 
+}
+
+int main() {
+    int num = 25;
+    
+    printf("Before function call: num = %d\n", num);
+    updateValue(&num);
+    printf("After function call: num = %d\n", num);
+    
+    return 0;
+}
