@@ -23,11 +23,11 @@ public:
 
 int main() {
     
-    Car carObj1("mohit", "112345", 2008);
-    Car carObj2("Tesla", "Model 3", 2025);
+    Stud studObj1("mohit", "112345", 2008);
+    Stud studObj2("jatin", "117890", 2025);
 
-    carObj1.displayInfo();
-    carObj2.displayInfo();
+    studObj1.displayInfo();
+    studObj2.displayInfo();
 
     return 0;
 }
