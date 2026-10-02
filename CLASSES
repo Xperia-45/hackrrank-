@@ -2,28 +2,28 @@
 #include <string>
 
 using namespace std;
-class Car {
+class student {
 public: 
-    string brand;
-    string model;
+    string name;
+    int id ;
     int year;
 
 
-    Car(string carBrand, string carModel, int carYear) {
-        brand = carBrand;
-        model = carModel;
-        year = carYear;
+    Car(string name, int id , int year) {
+        name = name ;
+        id = id;
+        year = year;
     }
 
     
     void displayInfo() {
-        cout << "Car Details: " << year << " " << brand << " " << model << endl;
+        cout << "students Details: " << name  << " " << id << " " << year << endl;
     }
 };
 
 int main() {
     
-    Car carObj1("Toyota", "Corolla", 2022);
+    Car carObj1("mohit", "112345", 2008);
     Car carObj2("Tesla", "Model 3", 2025);
 
     carObj1.displayInfo();
